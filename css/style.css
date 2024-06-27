@@ -20,8 +20,10 @@ h2 {
 .chessboard {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     width: 1000px;
-    height: 1000px;
     margin: 30px auto;
     background-color: red;
 }
