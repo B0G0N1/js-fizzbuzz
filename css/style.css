@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+/* LAYOUT CLASS */
 body {
     background-color: #083b4c;
 }
@@ -23,21 +25,23 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 1000px;
+    padding: 10px;
+    max-width: 1000px;
     margin: 30px auto;
-    background-color: red;
 }
 
 .square {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
-    color: white;
+    width: 120px;
+    height: 120px;
+    color: black;
     border: 1px solid black;
 }
 
+
+/* SQUARE COLOR CLASS */
 .number {
     background-color: #1389b2;
 }
@@ -52,4 +56,12 @@ h2 {
 
 .fizzBuzz {
     background-color: #f0466f;
+}
+
+
+/* TITLE RESPONSIVE */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 40px;
+    }
 }
