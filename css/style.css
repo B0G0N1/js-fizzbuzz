@@ -18,6 +18,8 @@ h2 {
 }
 
 .chessboard {
+    display: flex;
+    flex-wrap: wrap;
     width: 1000px;
     height: 1000px;
     margin: 30px auto;
@@ -25,6 +27,9 @@ h2 {
 }
 
 .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
     color: white;
