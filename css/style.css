@@ -9,17 +9,24 @@ body {
     background-color: #083b4c;
 }
 
-.container {
-    width: 1000px;
-    height: 1000px;
-    margin: 30px auto;
-    background-color: red;
-}
-
 h2 {
     font-size: 80px;
     font-weight: bold;
     text-align: center;
     color: white;
     margin-top: 30px;
+}
+
+.chessboard {
+    width: 1000px;
+    height: 1000px;
+    margin: 30px auto;
+    background-color: red;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    color: white;
+    border: 1px solid black;
 }
