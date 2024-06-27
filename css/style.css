@@ -37,3 +37,19 @@ h2 {
     color: white;
     border: 1px solid black;
 }
+
+.number {
+    background-color: #1389b2;
+}
+
+.fizz {
+    background-color: #0cd6a1;
+}
+
+.buzz {
+    background-color: #ffd166;
+}
+
+.fizzBuzz {
+    background-color: #f0466f;
+}
