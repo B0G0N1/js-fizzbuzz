@@ -14,3 +14,21 @@ Numero minimo di push: 5 (solo parte obbligatoria)
 BONUS 1: Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
 BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 Buon lavoro e buon divertimento!
+
+
+
+
+
+<!--------------------
+    PSEUDO-CODICE
+--------------------->
+Entro in un ciclo FOR [i=1; i<=100; i++]
+    > SE [i] è multiplo di x3 E [i] è multiplo di x5
+        > Stampa nella console "FizzBuzz"
+    > ELSE SE [i] è multiplo di x3
+        > Stampa nella console "Fizz"
+    > ELSE SE [i] è multiplo di x5
+        > Stampa nella console "Buzz"
+    > ALTRIMENTI
+        > Stampa nella console [i]
+<!-- Tanti altri metodi ma questo più semplice, penso -->
