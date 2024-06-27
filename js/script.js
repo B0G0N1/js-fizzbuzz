@@ -1,37 +1,33 @@
-// Crea e assegna all costante chessboard il primo elemento del DOM che ha la classe chessboard
-const chessboard = document.querySelector('.chessboard')
+// Seleziona il primo elemento del DOM con la classe 'chessboard' e lo assegna alla costante 'chessboard'
+const chessboard = document.querySelector('.chessboard');
 
-// Entro in un ciclo for che va da 1 a 100
+// Avvia un ciclo for che va da 1 a 100
 for (let i = 1; i <= 100; i++) {
-    // Creare elemento div classe "square"
+    // Crea un nuovo elemento 'div' e lo assegna alla costante 'square'
     const square = document.createElement('div');
-    square.classList.add('square');
-    
-    // Se il numero è multiplo di 15 allora stampo "FizzBuzz"
+    // Inizializza le variabili 'text' con il valore di 'i' e 'className' con 'number'
+    let text = i, className = 'number';
+
+    // Se il numero è multiplo di 15, assegna 'FizzBuzz' a 'text' e 'fizzBuzz' a 'className'
     if (i % 15 === 0) {
-        // Aggiunge all'interno di "square" il testo "FizzBuzz"
-        square.innerText = 'FizzBuzz';
-        square.classList.add('fizzBuzz');
+        text = 'FizzBuzz';
+        className = 'fizzBuzz';
     }
-    // Se il numero è multiplo di 3 allora stampo "Fizz"
+    // Se il numero è multiplo di 3, assegna 'Fizz' a 'text' e 'fizz' a 'className'
     else if (i % 3 === 0) {
-        // Aggiunge all'interno di "square" il testo "Fizz"
-        square.innerText = 'Fizz';
-        square.classList.add('fizz');
+        text = 'Fizz';
+        className = 'fizz';
     }
-    // Se il numero è multiplo di 5 allora stampo "Buzz"
+    // Se il numero è multiplo di 5, assegna 'Buzz' a 'text' e 'buzz' a 'className'
     else if (i % 5 === 0) {
-        // Aggiunge all'interno di "square" il testo "Buzz"
-        square.innerText = 'Buzz';
-        square.classList.add('buzz');
-    }
-    // Altrimenti stampo il numero
-    else {
-        // Aggiunge all'interno di "square" il numero del ciclo
-        square.classList.add('number');
-        square.innerText = `${i}`;
+        text = 'Buzz';
+        className = 'buzz';
     }
 
-    // Aggiunge l'elemento "square" alla fine dell'elemento "chessboard"
+    // Aggiunge le classi 'square' e la classe corrispondente a 'className' all'elemento 'square'
+    square.classList.add('square', className);
+    // Imposta il testo dell'elemento 'square' a 'text'
+    square.innerText = text;
+    // Aggiunge l'elemento 'square' come ultimo figlio dell'elemento 'chessboard'
     chessboard.append(square);
 }
